@@ -17,6 +17,36 @@ var squares = document.getElementsByClassName('square');
 var gameEnd = false;
 var onePlayerGame = true;
 
+
+function singlePlayer(){
+	if (onePlayerGame != true){
+		onePlayerGame = true;
+	};
+}
+
+function twoPlayer(){
+	if(onePlayerGame == true){
+		onePlayerGame = false;
+	};
+};
+
+function newGame(){
+	if (takenSquares.length >= 1){
+		takenSquares.length = 0;
+		player1Squares.length = 0;
+		player2Squares.length = 0;
+		whosTurn = 1;
+		gameEnd = false;
+		for (i = 0; i < squares.length; i++){
+			squares[i].innerHTML = "";
+			if (squares[i].className == " winning-square"){
+			squares[i].className -= " winning-square";
+			};
+		};
+	};
+};
+
+
 function markSquare(currentSquare, whoJustWent){
 	var messageElement = document.getElementById('message');
 	var squareResult = "";
@@ -79,8 +109,9 @@ function checkWin(currentPlayersSquares,whosTurn){
 };
 
 function gameOver(whoJustWon,winningCombo){
+	var messageElement = document.getElementById('message')
 	var item = "Congratulations to Player " + whoJustWon + ". You won with " + winningCombo + "!";
-	document.getElementById('message').innerHTML = item;
+	messageElement.innerHTML = item;
 	for (let i = 0; i < winningCombo.length; i++){
 		document.getElementById(winningCombo[i]).className += ' winning-square'
 	};
