@@ -1,0 +1,106 @@
+button {
+	border: 0px;
+}
+
+.header h1 {
+	color: orange;
+	font-size: 60px;
+	text-shadow: black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px;
+}
+
+.col-sm-8, .col-sm-4 {
+	padding: 0px;
+}
+
+.top {
+	border-bottom: 2px solid purple;
+}
+
+.first {
+	border-right: 2px solid purple;
+}
+
+.second {
+	border-right: 2px solid purple;
+	border-left: 2px solid purple;
+}
+
+.third {
+	border-left: 2px solid purple;
+}
+
+.mid {
+	border-top: 2px solid purple;
+	border-bottom: 2px solid purple;
+}
+
+.bottom {
+	border-top: 2px solid purple;
+}
+
+
+.game {
+	/*border: 5px solid purple;*/
+	margin-bottom: 5px;
+}
+
+#board {
+	/*max-width: 640px;*/
+	/*min-width: 320px;*/
+	/*float: none;*/
+	margin: auto;
+
+}
+
+.square {
+	background-color: white;
+	/*border: 2px solid purple;*/
+	outline: none;
+	width: 100%;
+	min-height: 170px;
+	/*padding: 20px 0px;*/
+	font-size: 80px;
+	font-weight: bolder;
+
+}
+
+.square
+
+.square:hover{
+	background-color: purple;
+	color: white;
+	text-shadow: black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px;	
+}
+
+.player1 {
+	border: 5px solid white;	
+	font-size: 30px;
+	background-color: green;
+	color: white;
+	text-shadow: black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px;		
+}
+
+.player2{
+	border: 5px solid white;	
+	font-size: 30px;
+	background-color: white;
+	color: white;
+	text-shadow: black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px;			
+}
+
+.players {
+	border: 5px solid white;
+}
+
+.winning-square{
+	background-color: orange !important;
+	color: purple !important;	
+}
+
+#message {
+	color: white;
+	margin-bottom: 10px;
+	height: 50px;
+	font-size: 40px;
+	text-shadow: black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px,black 0px 0px 1px,black 0px 0px 1px,black 0px 0px 1px;
+}
